@@ -1,0 +1,1 @@
+debug\startup_lpc55s69_cm33_core0.o: startup/startup_LPC55S69_cm33_core0.s

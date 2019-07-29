@@ -1,0 +1,483 @@
+Dependencies for Project 'usart_polling', Target 'usart_polling debug': (DO NOT MODIFY !)
+F (board/board.c)(0x5C6E20AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/board.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (utilities\fsl_debug_console.h)(0x5C6E20AE)
+I (component\serial_manager\serial_manager.h)(0x5C6E20AC)
+I (component\serial_manager\serial_port_uart.h)(0x5C6E20AC)
+I (board\board.h)(0x5C6E20AC)
+I (board\clock_config.h)(0x5C6E20AC)
+I (drivers\fsl_gpio.h)(0x5C6E20AE)
+I (drivers\fsl_iocon.h)(0x5C6E20AE)
+F (board/board.h)(0x5C6E20AC)()
+F (board/clock_config.c)(0x5C6E20AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/clock_config.o -MD)
+I (drivers\fsl_power.h)(0x5C6E20AE)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (board\clock_config.h)(0x5C6E20AC)
+F (board/clock_config.h)(0x5C6E20AC)()
+F (board/pin_mux.c)(0x5C6E20AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/pin_mux.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (drivers\fsl_iocon.h)(0x5C6E20AE)
+I (board\pin_mux.h)(0x5C6E20AC)
+F (board/pin_mux.h)(0x5C6E20AC)()
+F (CMSIS/arm_common_tables.h)(0x5C6E20AA)()
+F (CMSIS/arm_const_structs.h)(0x5C6E20AA)()
+F (CMSIS/arm_math.h)(0x5C6E20AA)()
+F (CMSIS/cmsis_armcc.h)(0x5C6E20AA)()
+F (CMSIS/cmsis_armclang.h)(0x5C6E20AA)()
+F (CMSIS/cmsis_compiler.h)(0x5C6E20AA)()
+F (CMSIS/cmsis_gcc.h)(0x5C6E20AA)()
+F (CMSIS/cmsis_iccarm.h)(0x5C6E20AA)()
+F (CMSIS/cmsis_version.h)(0x5C6E20AA)()
+F (CMSIS/core_armv8mbl.h)(0x5C6E20AA)()
+F (CMSIS/core_armv8mml.h)(0x5C6E20AA)()
+F (CMSIS/core_cm33.h)(0x5C6E20AA)()
+F (CMSIS/mpu_armv7.h)(0x5C6E20AA)()
+F (CMSIS/mpu_armv8.h)(0x5C6E20AA)()
+F (CMSIS/tz_context.h)(0x5C6E20AA)()
+F (component/lists/generic_list.c)(0x5C6E20AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/generic_list.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (component\lists\generic_list.h)(0x5C6E20AC)
+F (component/lists/generic_list.h)(0x5C6E20AC)()
+F (component/serial_manager/serial_manager.c)(0x5C6E20AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/serial_manager.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (component\serial_manager\serial_manager.h)(0x5C6E20AC)
+I (component\serial_manager\serial_port_uart.h)(0x5C6E20AC)
+F (component/serial_manager/serial_manager.h)(0x5C6E20AC)()
+F (component/serial_manager/serial_port_uart.c)(0x5C6E20AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/serial_port_uart.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (component\serial_manager\serial_manager.h)(0x5C6E20AC)
+I (component\serial_manager\serial_port_uart.h)(0x5C6E20AC)
+I (component\uart\uart.h)(0x5C6E20AC)
+F (component/serial_manager/serial_port_uart.h)(0x5C6E20AC)()
+F (component/uart/uart.h)(0x5C6E20AC)()
+F (component/uart/usart_adapter.c)(0x5C6E20AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/usart_adapter.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (drivers\fsl_usart.h)(0x5C6E20AE)
+I (drivers\fsl_flexcomm.h)(0x5C6E20AE)
+I (component\uart\uart.h)(0x5C6E20AC)
+F (device/fsl_device_registers.h)(0x5C6E20AE)()
+F (device/LPC55S69_cm33_core0.h)(0x5C6E20AE)()
+F (device/LPC55S69_cm33_core0_features.h)(0x5C6E20AE)()
+F (device/system_LPC55S69_cm33_core0.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/system_lpc55s69_cm33_core0.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+F (device/system_LPC55S69_cm33_core0.h)(0x5C6E20AE)()
+F (doc/readme.txt)(0x5C6E20AC)()
+F (drivers/fsl_clock.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_clock.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (drivers\fsl_power.h)(0x5C6E20AE)
+F (drivers/fsl_clock.h)(0x5C6E20AE)()
+F (drivers/fsl_common.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_common.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+F (drivers/fsl_common.h)(0x5C6E20AE)()
+F (drivers/fsl_flexcomm.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_flexcomm.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (drivers\fsl_flexcomm.h)(0x5C6E20AE)
+F (drivers/fsl_flexcomm.h)(0x5C6E20AE)()
+F (drivers/fsl_gpio.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_gpio.o -MD)
+I (drivers\fsl_gpio.h)(0x5C6E20AE)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+F (drivers/fsl_gpio.h)(0x5C6E20AE)()
+F (drivers/fsl_inputmux.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_inputmux.o -MD)
+I (drivers\fsl_inputmux.h)(0x5C6E20AE)
+I (drivers\fsl_inputmux_connections.h)(0x5C6E20AE)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+F (drivers/fsl_inputmux.h)(0x5C6E20AE)()
+F (drivers/fsl_inputmux_connections.h)(0x5C6E20AE)()
+F (drivers/fsl_iocon.h)(0x5C6E20AE)()
+F (drivers/fsl_power.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_power.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (drivers\fsl_power.h)(0x5C6E20AE)
+F (drivers/fsl_power.h)(0x5C6E20AE)()
+F (drivers/fsl_reset.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_reset.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+F (drivers/fsl_reset.h)(0x5C6E20AE)()
+F (drivers/fsl_usart.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_usart.o -MD)
+I (drivers\fsl_usart.h)(0x5C6E20AE)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (drivers\fsl_flexcomm.h)(0x5C6E20AE)
+F (drivers/fsl_usart.h)(0x5C6E20AE)()
+F (source/usart_polling.c)(0x5C6E20AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/usart_polling.o -MD)
+I (board\board.h)(0x5C6E20AC)
+I (board\clock_config.h)(0x5C6E20AC)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (drivers\fsl_gpio.h)(0x5C6E20AE)
+I (drivers\fsl_iocon.h)(0x5C6E20AE)
+I (drivers\fsl_usart.h)(0x5C6E20AE)
+I (board\pin_mux.h)(0x5C6E20AC)
+F (startup/startup_LPC55S69_cm33_core0.s)(0x5C6E20AE)(--cpu=Cortex-M33 --fpu=FPv5-SP -g --pd "__MICROLIB SETA 1" -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities-I.\RTE\_usart_polling_debug-IC:\Keil_v5\ARM\PACK\NXP\LPC55S69_DFP\11.0.0-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 527"--pd "CPU_LPC55S69JBD100_cm33_core0 SETA 1"--pd "CPU_LPC55S69JBD100_cm33_core0 SETA 1"--pd "DEBUG SETA 1"--pd "__CC_ARM SETA 1"--pd "KEIL SETA 1"--pd "DEBUG SETA 1"--list .\listings\startup_lpc55s69_cm33_core0.lst-o debug\startup_lpc55s69_cm33_core0.o--depend debug\startup_lpc55s69_cm33_core0.d)
+F (utilities/fsl_assert.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_assert.o -MD)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (utilities\fsl_debug_console.h)(0x5C6E20AE)
+I (component\serial_manager\serial_manager.h)(0x5C6E20AC)
+I (component\serial_manager\serial_port_uart.h)(0x5C6E20AC)
+F (utilities/fsl_debug_console.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_debug_console.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5B739900)
+I (utilities\fsl_debug_console_conf.h)(0x5C6E20AE)
+I (utilities\fsl_str.h)(0x5C6E20AE)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (component\serial_manager\serial_manager.h)(0x5C6E20AC)
+I (component\serial_manager\serial_port_uart.h)(0x5C6E20AC)
+I (utilities\fsl_debug_console.h)(0x5C6E20AE)
+F (utilities/fsl_debug_console.h)(0x5C6E20AE)()
+F (utilities/fsl_debug_console_conf.h)(0x5C6E20AE)()
+F (utilities/fsl_str.c)(0x5C6E20AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I source -I CMSIS -I component/lists -I component/serial_manager -I component/uart -I device -I doc -I drivers -I src -I startup -I utilities --target=arm-arm-none-eabi  -Wall  -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb  -fno-rtti  -fno-exceptions  -Wno-pedantic  -Wno-padded  -Wno-unused-parameter  -Wno-missing-prototypes  -Wno-covered-switch-default  -Wno-conversion  -Wno-switch-enum  -Wno-sign-compare  -Wno-sign-conversion  -Wno-cast-qual  -Wno-cast-align  -Wno-implicit-function-declaration  -Wno-strict-prototypes  -Wno-missing-variable-declarations  -Wno-self-assign  -Wno-missing-noreturn  -Wno-missing-field-initializers  -Wno-conditional-uninitialized  -Wno-tautological-constant-out-of-range-compare  -Wno-shadow  -Wno-missing-braces  -Wno-undef  -Wno-null-dereference  -Wno-bad-function-cast  -Wno-tautological-pointer-compare  -Wno-unknown-attributes  -Wno-unreachable-code  -Wno-unreachable-code-return  -Wno-ignored-attributes  -Wno-float-equal  -Wno-implicit-int  -Wno-format-nonliteral  -Wno-comma  -Wno-date-time  -Wno-unused-variable  -Wno-double-promotion  -Wno-logical-not-parentheses  -Wno-sometimes-uninitialized  -Wno-c++98-compat-pedantic  -Wno-zero-as-null-pointer-constant  -Wno-extra-semi  -Wno-old-style-cast  -Wno-weak-vtables  -Wno-implicit-exception-spec-mismatch -I./RTE/_usart_polling_debug-IC:/Keil_v5/ARM/PACK/NXP/LPC55S69_DFP/11.0.0-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="527" -DCPU_LPC55S69JBD100_cm33_core0 -DDEBUG -DCPU_LPC55S69JBD100_cm33_core0 -DARM_MATH_CM33-o debug/fsl_str.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5B739900)
+I (utilities\fsl_str.h)(0x5C6E20AE)
+I (drivers\fsl_common.h)(0x5C6E20AE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5B739900)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5B739900)
+I (device\fsl_device_registers.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (CMSIS\core_cm33.h)(0x5C6E20AA)
+I (CMSIS\cmsis_version.h)(0x5C6E20AA)
+I (CMSIS\cmsis_compiler.h)(0x5C6E20AA)
+I (CMSIS\cmsis_armclang.h)(0x5C6E20AA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5A8EB578)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5910B974)
+I (CMSIS\mpu_armv8.h)(0x5C6E20AA)
+I (device\system_LPC55S69_cm33_core0.h)(0x5C6E20AE)
+I (device\LPC55S69_cm33_core0_features.h)(0x5C6E20AE)
+I (drivers\fsl_clock.h)(0x5C6E20AE)
+I (drivers\fsl_reset.h)(0x5C6E20AE)
+I (utilities\fsl_debug_console_conf.h)(0x5C6E20AE)
+F (utilities/fsl_str.h)(0x5C6E20AE)()
